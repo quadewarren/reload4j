@@ -23,7 +23,7 @@
   <packaging>jar</packaging>
   <name>reload4j</name>
   <version>1.2.20-SNAPSHOT</version>
-  <description>Reload4j revives EOLed log4j 1.x</description> 
+  <description>Reload4j revives EOLed log4j 1.x</description>
 
   <url>https://reload4j.qos.ch</url>
   <inceptionYear>1999</inceptionYear>
@@ -45,10 +45,10 @@
     <connection>scm:git@github.com:qos-ch/reload4j.git</connection>
   </scm>
 
-  
+
   <properties>
     <!-- yyyy-MM-dd'T'HH:mm:ss'Z' -->
-    <project.build.outputTimestamp>2022-02-08T08:07:00Z</project.build.outputTimestamp>    
+    <project.build.outputTimestamp>2022-02-08T08:07:00Z</project.build.outputTimestamp>
     <jdk.version>1.5</jdk.version>
     <maven.compiler.source>${jdk.version}</maven.compiler.source>
     <maven.compiler.target>${jdk.version}</maven.compiler.target>
@@ -62,7 +62,7 @@
     <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
     <maven-javadoc-plugin.version>3.1.0</maven-javadoc-plugin.version>
     <maven-source-plugin.version>3.2.0</maven-source-plugin.version>
-    <maven-deploy-plugin.version>3.0.0-M1</maven-deploy-plugin.version>    
+    <maven-deploy-plugin.version>3.0.0-M1</maven-deploy-plugin.version>
     <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
     <maven-bundle-plugin.version>5.1.4</maven-bundle-plugin.version>
     <maven-release-plugin.version>3.0.0-M4</maven-release-plugin.version>
@@ -76,61 +76,61 @@
       <name>Anders Kristensen</name>
       <email>anders@apache.org</email>
     </developer>
-    
+
     <developer>
       <id>ceki</id>
       <name>Ceki Gulcu</name>
       <email>ceki@apache.org</email>
     </developer>
-    
+
     <developer>
       <id>grobmeier</id>
       <name>Christian Grobmeier</name>
       <email>grobmeier@apache.org</email>
     </developer>
-    
+
     <developer>
       <id>carnold</id>
       <name>Curtis William Arnold</name>
       <email>carnold@apache.org</email>
     </developer>
-    
+
     <developer>
       <id>eross</id>
       <name>Elias Nathan Ross</name>
       <email>eross@apache.org</email>
     </developer>
-    
+
     <developer>
       <id>ggregory</id>
       <name>Gary D. Gregory</name>
       <email>ggregory@apache.org</email>
     </developer>
-    
+
     <developer>
       <id>hoju</id>
       <name>Jacob Kjome</name>
       <email>hoju@apache.org</email>
     </developer>
-    
+
     <developer>
       <id>jmoore</id>
       <name>Jim Moore</name>
       <email>jmoore@apache.org</email>
     </developer>
-    
+
     <developer>
       <id>jon</id>
       <name>Jon Scott Stevens</name>
       <email>jon@apache.org</email>
     </developer>
-    
+
     <developer>
       <id></id>
       <name>Mark Wayne Womack</name>
       <email>mwomack@apache.org</email>
     </developer>
-           
+
 
     <developer>
       <id>psmith</id>
@@ -143,25 +143,25 @@
       <name>Pier Fumagalli</name>
       <email>pier@apache.org</email>
     </developer>
-    
+
     <developer>
       <id>rgoers</id>
       <name>Ralph Goers</name>
       <email>rgoers@apache.org</email>
     </developer>
-    
+
     <developer>
       <id>sdeboy</id>
       <name>Scott Deboy</name>
       <email>sdeboy@apache.org</email>
     </developer>
-    
+
     <developer>
       <id>yoavs</id>
       <name>Yoav Shapira</name>
       <email>yoavs@apache.org</email>
     </developer>
-    
+
     <developer>
       <id>bradm</id>
       <name>bradm</name>
@@ -174,13 +174,13 @@
       <name>Oliver Bburn</name>
       <email>oburn@apache.org</email>
     </developer>
-    
+
     <developer>
       <id>pathos</id>
       <name>Mathias Bogaert</name>
       <email>pathos@apache.org</email>
     </developer>
-    
+
     <developer>
       <id>pglezen</id>
       <name>Paul Glezen</name>
@@ -188,7 +188,7 @@
     </developer>
 
   </developers>
-  
+
   <build>
     <plugins>
       <plugin>
@@ -197,7 +197,7 @@
         <version>${maven-toolchains-plugin.version}</version>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>        
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>${maven-jar-plugin.version}</version>
         <configuration>
@@ -206,7 +206,7 @@
              <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
            </manifest>
             <manifestEntries>
-              <X-Compile-Source-JDK>${maven.compiler.source}</X-Compile-Source-JDK>	
+              <X-Compile-Source-JDK>${maven.compiler.source}</X-Compile-Source-JDK>
               <X-Compile-Target-JDK>${maven.compiler.target}</X-Compile-Target-JDK>
             </manifestEntries>
             <!-- Add to output produced by bundle-plugin -->
@@ -223,10 +223,10 @@
             </goals>
           </execution>
         </executions>
- 
+
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>        
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
         <version>${maven-source-plugin.version}</version>
         <configuration>
@@ -243,14 +243,14 @@
               </manifestSection>
             </manifestSections>
           </archive>
-        </configuration>          
+        </configuration>
         <executions>
           <execution>
             <goals>
               <goal>jar</goal>
             </goals>
-          </execution> 
-        </executions>          
+          </execution>
+        </executions>
       </plugin>
       <plugin>
         <artifactId>maven-javadoc-plugin</artifactId>
@@ -293,11 +293,11 @@
         <version>${maven-deploy-plugin.version}</version>
       </plugin>
 
-      
+
       <plugin>
         <groupId>org.apache.felix</groupId>
         <artifactId>maven-bundle-plugin</artifactId>
-        <version>${maven-bundle-plugin.version}</version>        
+        <version>${maven-bundle-plugin.version}</version>
         <extensions>true</extensions>
         <executions>
           <execution>
@@ -333,7 +333,7 @@
           </instructions>
         </configuration>
       </plugin>
-     
+
     </plugins>
   </build>
 
@@ -343,8 +343,8 @@
       <!--
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>        
-        <configuration>                                
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <configuration>
           <linkJavadoc>true</linkJavadoc>
           <linksource>true</linksource>
           <failOnError>false</failOnError>
